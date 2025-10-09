@@ -1,40 +1,27 @@
-package com.john.zoo;
+package com.johncarl.zoo;
+
+import java.time.LocalDate;
 
 public class App {
-
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Welcome to my Zoo Program!");
 
-        // How many animals do we have?
-        System.out.println("\n numOfAnimals is " + Animal.numOfAnimals);
+        Animal myanimal = new Animal();
+        System.out.println("\n Animal arrival date is" + myanimal.getAniArrivalDate());
 
-
-
-        //Create a new animal!
-        Animal myNewAnimal = new Animal();
-
-        System.out.println( "\n myNewAnimal object's aniID is;" + myNewAnimal.getAnimalID());
-
-        //get our new animal
-        myNewAnimal.setAnimalID("acd123");
-        System.out.println("\n The setAnilID() method was !\n");
-
-        System.out.println( "\n myNewAnimal object's aniID is;" + myNewAnimal.getAnimalID());
+        LocalDate mydate = LocalDate.now();
+        LocalDate birthdate = LocalDate.now();
 
 
-        // How many animals do we have?
-        System.out.println("\n numOfAnimals is " + Animal.numOfAnimals);
+        // is the full animal constructor
+        //public animal String
+        //
 
-        // Creat another animal
-        Animal myNewAnimal2 = new Animal();
+        Animal anotheranimal = new Animal("Female", birthdate, 88, "Jeff", 112333, "Black", "Inbogway", LocalDate.getarivall time);
 
+        Lion myLion = new Lion();
 
-        // How many animals do we have?
-        System.out.println("\n numOfAnimals is " + Animal.numOfAnimals);
+        System.out.println("\n My lion arrived" + myLion+ anotheranimal.getAniArrivalDate());
 
-        Animal myAnimal = new Animal("Leo", 2, 80);
 
 
 
